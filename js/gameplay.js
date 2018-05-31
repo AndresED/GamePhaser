@@ -17,9 +17,17 @@ GamePlayManager={
     this.horse.frame=1;
     this.horse.x=game.width/2;
     this.horse.y=game.height/2;
+    this.horse.anchor.setTo(0.5,0.5);
+    //ROTANDO sprite
+    this.horse.angle=0;
+    //ESCALAR
+    this.horse.scale.setTo(1,2);
+    //OPACIDAD
+    this.horse.alpha=0.5;
   },
   update:function(){
     console.log("update");
+    //this.horse.angle=this.horse.angle+1;
   }
 }
 var game=new Phaser.Game(1136,640,Phaser.AUTO);
