@@ -4,9 +4,11 @@ GamePlayManager={
   },
   preload:function(){
     console.log("Preaload");
+    game.load.image('background','assets/images/background.png');
   },
   create:function(){
     console.log("create");
+    game.add.sprite(0,0,'background');
   },
   update:function(){
     console.log("update");
@@ -14,3 +16,4 @@ GamePlayManager={
 }
 var game=new Phaser.Game(1136,640,Phaser.AUTO);
 game.state.add('gameplay',GamePlayManager);
+game.state.start("gameplay");
