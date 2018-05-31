@@ -1,6 +1,9 @@
 GamePlayManager={
   init:function(){
     console.log("Init");
+    game.scale.scaleMode=Phaser.ScaleManager.SHOW_ALL;
+    game.scale.pageAlignHorizontally=true;
+    game.scale.pageAlignVertically=true;
   },
   preload:function(){
     console.log("Preaload");
